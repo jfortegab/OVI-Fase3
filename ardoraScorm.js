@@ -18,7 +18,8 @@ var aluName = api.LMSGetValue("cmi.core.student_name");document.getElementById("
 $("#ardoraAlumSCORM").click(function(){var widthAlum=$("#ardoraAlumSCORM").css("width");
 if (widthAlum=="250px"){$("#ardoraAlumSCORM").css("width","15px");document.getElementById("ardoraAlumSCORM").innerHTML="";}
 else{$("#ardoraAlumSCORM").css("width","250px");document.getElementById("ardoraAlumSCORM").innerHTML="<p>"+aluName+"</p>";}});
-document.getElementById("ardoraAlumSCORM").style["visibility"]="visible";}}
+document.getElementById("ardoraAlumSCORM").style["visibility"]="visible";}
+}
 function unloadPage(){ if ((api != null) && (apiInput==0)) {var currentTime = new Date();var endTime = currentTime.getTime()
 var calculatedTime = endTime-startTime;var totalHours = Math.floor(calculatedTime/1000/60/60);calculatedTime = calculatedTime - totalHours*1000*60*60
 if ( totalHours < 1000 && totalHours > 99 ) {totalHours = "0"+totalHours;} else if ( totalHours < 100 && totalHours > 9 ) {totalHours = "00"+totalHours;
